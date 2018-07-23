@@ -124,7 +124,7 @@ REST_FRAMEWORK = {
     #     "rest_framework.authentication.SessionAuthentication",
     #     "rest_framework.authentication.BasicAuthentication",
     # ),
-    "DATETIME_FORMAT": "%Y-%m-%d %H:%M",
+    "DATETIME_FORMAT": "%Y-%m-%d %H:%M"
 }
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -144,5 +144,6 @@ JWT_AUTH = {
 }
 
 import django_heroku
-TEST_RUNNER = 'django_heroku.HerokuDiscoverRunner'
+
+TEST_RUNNER = "django_heroku.HerokuDiscoverRunner"
 django_heroku.settings(locals())

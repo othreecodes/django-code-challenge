@@ -8,9 +8,9 @@ class ContactListSerializer(serializers.ModelSerializer):
         model = ContactList
         fields = "__all__"
 
-class UserSerializer(serializers.ModelSerializer):
 
+class UserSerializer(serializers.ModelSerializer):
     class Meta:
         model = User
-        write_only_fields = ('password',)
-        fields = ('first_name','last_name','username','email','password')
+        write_only_fields = ("password",)
+        fields = ("first_name", "last_name", "username", "email", "password")
