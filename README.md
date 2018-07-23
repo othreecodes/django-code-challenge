@@ -3,7 +3,7 @@
 
 # Requirements
 - Python > 3.6.0
-- (Python requirements)[requirements.txt]
+- [Python requirements](requirements.txt)
 
 # CREATE USER ACCOUNT
 
@@ -28,7 +28,7 @@ to `/user`
 {
 
     "username":"",
-    "email":"",
+    "password":"",
 }
 
 to `/login`
