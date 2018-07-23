@@ -142,3 +142,7 @@ JWT_AUTH = {
     "JWT_EXPIRATION_DELTA": datetime.timedelta(days=300),
     "JWT_REFRESH_EXPIRATION_DELTA": datetime.timedelta(days=300),
 }
+
+import django_heroku
+TEST_RUNNER = 'django_heroku.HerokuDiscoverRunner'
+django_heroku.settings(locals())
